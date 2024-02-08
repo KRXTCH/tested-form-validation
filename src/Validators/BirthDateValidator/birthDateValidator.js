@@ -35,14 +35,14 @@ export function birthDateValidator(birthDate) {
  */
 export function calculateAge(date) {
     if (!date) {
-        console.error("La date de naissance doit être fournie.");
+        console.log("La date de naissance doit être fournie.");
         return null;
     }
 
     const birthDate = new Date(date);
 
     if (isNaN(birthDate.getTime())) {
-        console.error("La date de naissance fournie n'est pas valide.");
+        console.log("La date de naissance fournie n'est pas valide.");
         return null;
     }
 

@@ -29,6 +29,11 @@ describe('birthDateValidator function', () => {
         const emptyBirthDate = '';
         expect(birthDateValidator(emptyBirthDate)).toBe(false);
     });
+
+    test('Birth date lower than 18 return false', () => {
+        const invalidBirthDate = '2022-02-12';
+        expect(birthDateValidator(invalidBirthDate)).toBe(false);
+    })
 });
 
 /**
