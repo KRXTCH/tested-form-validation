@@ -1,4 +1,32 @@
-import React from "react";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: Components/Form/Form.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: Components/Form/Form.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React from "react";
 import { birthDateValidator } from "../../Validators/BirthDateValidator/birthDateValidator";
 import { mailValidator } from "../../Validators/MailValidator/mailValidator";
 import { nameValidator } from "../../Validators/NameValidator/nameValidator";
@@ -85,7 +113,7 @@ function Form() {
         isPostalCodeValid
       });
 
-      const formIsValid = isBirthDateValid && isEmailValid && isNameValid && isSurnameValid && isCityValid && isPostalCodeValid;
+      const formIsValid = isBirthDateValid &amp;&amp; isEmailValid &amp;&amp; isNameValid &amp;&amp; isSurnameValid &amp;&amp; isCityValid &amp;&amp; isPostalCodeValid;
   
       if (formIsValid) {
         saveFormData();
@@ -96,97 +124,119 @@ function Form() {
     };
   
     return (
-      <div>
-        <form onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="birthDate">Date de naissance:</label>
-            <input
+      &lt;div>
+        &lt;form onSubmit={handleSubmit}>
+          &lt;div>
+            &lt;label htmlFor="birthDate">Date de naissance:&lt;/label>
+            &lt;input
               id="birthDate"
               type="text"
               name="birthDate"
               value={formData.birthDate}
               onChange={handleInputChange}
             />
-            {!validationResults.isBirthDateValid && (
-              <span style={{ color: 'red' }}>Date de naissance invalide</span>
+            {!validationResults.isBirthDateValid &amp;&amp; (
+              &lt;span style={{ color: 'red' }}>Date de naissance invalide&lt;/span>
             )}
-          </div>
+          &lt;/div>
     
-          <div>
-            <label htmlFor="email">Adresse e-mail:</label>
-            <input
+          &lt;div>
+            &lt;label htmlFor="email">Adresse e-mail:&lt;/label>
+            &lt;input
               id="email"
               type="text"
               name="email"
               value={formData.email}
               onChange={handleInputChange}
             />
-            {!validationResults.isEmailValid && (
-              <span style={{ color: 'red' }}>Adresse e-mail invalide</span>
+            {!validationResults.isEmailValid &amp;&amp; (
+              &lt;span style={{ color: 'red' }}>Adresse e-mail invalide&lt;/span>
             )}
-          </div>
+          &lt;/div>
     
-          <div>
-            <label htmlFor="name">Nom:</label>
-            <input
+          &lt;div>
+            &lt;label htmlFor="name">Nom:&lt;/label>
+            &lt;input
               id="name"
               type="text"
               name="name"
               value={formData.name}
               onChange={handleInputChange}
             />
-            {!validationResults.isNameValid && (
-              <span style={{ color: 'red' }}>Nom invalide</span>
+            {!validationResults.isNameValid &amp;&amp; (
+              &lt;span style={{ color: 'red' }}>Nom invalide&lt;/span>
             )}
-          </div>
+          &lt;/div>
 
-          <div>
-            <label htmlFor="surname">Prenom:</label>
-            <input
+          &lt;div>
+            &lt;label htmlFor="surname">Prenom:&lt;/label>
+            &lt;input
               id="surname"
               type="text"
               name="surname"
               value={formData.surname}
               onChange={handleInputChange}
             />
-            {!validationResults.isSurnameValid && (
-              <span style={{ color: 'red' }}>Prenom invalide</span>
+            {!validationResults.isSurnameValid &amp;&amp; (
+              &lt;span style={{ color: 'red' }}>Prenom invalide&lt;/span>
             )}
-          </div>
+          &lt;/div>
 
-          <div>
-            <label htmlFor="city">Ville:</label>
-            <input
+          &lt;div>
+            &lt;label htmlFor="city">Ville:&lt;/label>
+            &lt;input
               id="city"
               type="text"
               name="city"
               value={formData.city}
               onChange={handleInputChange}
             />
-            {!validationResults.isCityValid && (
-              <span style={{ color: 'red' }}>Ville invalide</span>
+            {!validationResults.isCityValid &amp;&amp; (
+              &lt;span style={{ color: 'red' }}>Ville invalide&lt;/span>
             )}
-          </div>
+          &lt;/div>
     
-          <div>
-            <label htmlFor="postalCode">Code postal:</label>
-            <input
+          &lt;div>
+            &lt;label htmlFor="postalCode">Code postal:&lt;/label>
+            &lt;input
               id="postalCode"
               type="text"
               name="postalCode"
               value={formData.postalCode}
               onChange={handleInputChange}
             />
-            {!validationResults.isPostalCodeValid && (
-              <span style={{ color: 'red' }}>Code postal invalide</span>
+            {!validationResults.isPostalCodeValid &amp;&amp; (
+              &lt;span style={{ color: 'red' }}>Code postal invalide&lt;/span>
             )}
-          </div>
+          &lt;/div>
     
-          <button type="submit" disabled={!isFormValid}>Soumettre</button>
-        </form>
-        <ToastContainer />
-      </div>
+          &lt;button type="submit" disabled={!isFormValid}>Soumettre&lt;/button>
+        &lt;/form>
+        &lt;ToastContainer />
+      &lt;/div>
     );
   }
   
-  export default Form;
+  export default Form;</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#Form">Form</a></li><li><a href="global.html#birthDateValidator">birthDateValidator</a></li><li><a href="global.html#calculateAge">calculateAge</a></li><li><a href="global.html#mailValidator">mailValidator</a></li><li><a href="global.html#nameValidator">nameValidator</a></li><li><a href="global.html#postalCodeValidator">postalCodeValidator</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Thu Feb 08 2024 14:19:11 GMT+0100 (heure normale d’Europe centrale)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
