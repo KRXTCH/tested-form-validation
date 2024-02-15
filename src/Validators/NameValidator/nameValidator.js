@@ -9,7 +9,7 @@ export function nameValidator(name) {
         return false;
     }
 
-    const validNameRegex = /^[ A-Za-zÀ-ÖØ-öø-ÿ\-]+$/;
+    const validNameRegex = /^[ A-Za-zÀ-ÖØ-öø-ÿ-]+$/;
 
     return validNameRegex.test(name);
 }
