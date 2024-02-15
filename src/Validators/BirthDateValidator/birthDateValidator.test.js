@@ -54,4 +54,9 @@ describe('calculateAge', () => {
         const age = calculateAge();
         expect(age).toBeNull();
     });
+
+    it('devrait retrouner un age infererieur si sa date de naisance est pas passé', () => {
+        const age = calculateAge('2006-11-12');
+        expect(age).toEqual(17);
+    })
 });

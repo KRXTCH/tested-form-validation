@@ -54,7 +54,7 @@ function Form() {
     const handleInputChange = (e) => {
       const { name, value } = e.target;
       
-      if (value === null) {
+      if (value === '') {
         setIsFormValid(false);
       } else {
         setIsFormValid(true);
