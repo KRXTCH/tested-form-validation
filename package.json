@@ -13,7 +13,7 @@
     "react-toastify": "^10.0.4",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://loise.github.io/ci-cd-ynov",
+  "homepage": "https://krxtch.github.io/tested-form-validation/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
