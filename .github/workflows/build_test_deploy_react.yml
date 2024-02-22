@@ -61,6 +61,10 @@ jobs:
     needs: build_test
     # Specify runner + deployment step
     steps:
+      - name: Update tag version
+        run: 
+          git tag 0.1.0-${{github.run_id}}${{github.run_number}}${{github.run_attempt}} -a -m "build alpha ${{github.run_number}}"
+          npm version from-git
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
